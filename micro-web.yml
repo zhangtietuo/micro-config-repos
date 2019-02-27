@@ -35,12 +35,12 @@ mybatis:
   #  com.ztt.controller.UserController: 'off'   #路径下日志不会被打印
 
 
-#--- #yml支持多文档块的方式
-#spring:
-#  profiles: dev
+--- #yml支持多文档块的方式
+spring:
+  profiles: dev
 
-#server:
-#  port: 8080
+server:
+  port: 8080
 
 manSize: 176
 manAge: 24
@@ -50,33 +50,33 @@ user:
   id: 100
   name: ???
   nickname: zhangtietuo-dev
-#---
-#spring:
-#  profiles: test
+---
+spring:
+  profiles: test
 server:
   port: 8082
-#---
-#spring:
-#  profiles: prod
+---
+spring:
+  profiles: prod
 
-#server:
-#  port: 8081
-#  servlet:
-#    context-path: /myProject #配置项目根目录 springboot2不好用？
+server:
+  port: 8081
+  servlet:
+    context-path: /myProject #配置项目根目录 springboot2不好用？
 
-#manSize: 176
-#manAge: 24
-#content: "年龄${manAge},身高${manSize}"
+manSize: 176
+manAge: 24
+content: "年龄${manAge},身高${manSize}"
 
-#user:
-#  id: ${random.int[20,30]} #项目启动后就不会再改变
-#  name: ???!
-#  nickname: zhangtietuo-prod
+user:
+  id: ${random.int[20,30]} #项目启动后就不会再改变
+  name: ???!
+  nickname: zhangtietuo-prod
 
-#my:
-#  property:
-#    name: zhangtietuo
-#    age: 25
-#    #- abc
-#    #- def
-#    #'[foo.baz]': bar
+my:
+  property:
+    name: zhangtietuo
+    age: 25
+    #- abc
+    #- def
+    #'[foo.baz]': bar
