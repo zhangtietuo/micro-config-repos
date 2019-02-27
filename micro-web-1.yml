@@ -1,8 +1,6 @@
 spring:
   #profiles:
     #active: prod
-  application:
-    name: micro-web
   jackson: #序列化时间格式化 Srping boot默认使用Jackson来进行序列化和返序列化
     date-format: yyyy年MM月dd日 HH:mm:ss
   datasource:
