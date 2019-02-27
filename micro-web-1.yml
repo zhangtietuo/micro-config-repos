@@ -22,16 +22,16 @@ spring:
         connectionTestQuery: select 1 # 从连接池获取到连接后，进行检查的查询语句。推荐设置该属性。默认值为none
         maxLifeTime: 600000 # 定义连接的最大生命周期。推荐设置该属性。最小30s，默认30m
   application:
-    name: micro-web
+    name: micro-web-1
   devtools:
     restart:
       additional-paths:
         - C:\Users\zhangtt\IdeaProjects\springboot2.1.0\restart
       enabled: false
 
-server:
-  servlet:
-    context-path: /springboot2
+#server:
+  #servlet:
+    #context-path: /micro-web-1
 
 mybatis:
   mapper-locations: classpath:mapping/*.xml
