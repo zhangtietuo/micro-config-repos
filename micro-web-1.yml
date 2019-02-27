@@ -6,8 +6,8 @@ eureka:
       lease-expiration-duration-in-seconds: 2
       lease-renewal-interval-in-seconds:  1
 spring:
-  profiles:
-    active: prod
+  #profiles:
+    #active: prod
   jackson: #序列化时间格式化 Srping boot默认使用Jackson来进行序列化和返序列化
     date-format: yyyy年MM月dd日 HH:mm:ss
   datasource:
