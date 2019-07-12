@@ -1,17 +1,17 @@
 server:
   port: 3002
 
-zuul:
-  host:
-    connect-timeout-millis: 60000
-    socket-timeout-millis: 60000
-  routes:
-    web:
-      path: /web/**
-      url: http://localhost:8081
-      sensitiveHeaders:
+#zuul:
+  #host:
+    #connect-timeout-millis: 60000
+    #socket-timeout-millis: 60000
+  #routes:
+    #web:
+      #path: /web/**
+      #url: http://localhost:8081
+      #sensitiveHeaders:
 
-    message:
-      path: /message/**
-      url: http://localhost:8082
-      sensitiveHeaders:
+    #message:
+      #path: /message/**
+      #url: http://localhost:8082
+      #sensitiveHeaders:
